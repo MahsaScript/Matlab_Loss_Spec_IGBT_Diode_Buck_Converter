@@ -1,0 +1,3187 @@
+Model {
+  Name			  "Loss_BuckConverter"
+  Version		  7.8
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.1341"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1252"
+  slprops.hdlmdlprops {
+    $PropName		    "HDLParams"
+    $ObjectID		    1
+    Array {
+      Type		      "Cell"
+      Dimension		      2
+      Cell		      "HDLSubsystem"
+      Cell		      "Losses_BuckConverter_v1"
+      PropName		      "mdlProps"
+    }
+  }
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  StopFcn		  "if OverTemp==1\n     load explosion_sound;\n     sound(explosion,Fs);\nend\n"
+  UserBdParams		  "PhysicalModelingChecksum;PhysicalModelingParameterChecksum;PhysicalModelingProducts"
+  PhysicalModelingChecksum "2142921914"
+  PhysicalModelingParameterChecksum "3507818961"
+  PhysicalModelingProducts "Power_System_Blocks|Simscape"
+  Created		  "Sun Feb 12 09:32:57 2012"
+  Creator		  "Proprietaire"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "at4494"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Mon Apr 02 15:36:04 2012"
+  RTWModifiedTimeStamp	  255281754
+  ModelVersionFormat	  "1.%<AutoIncrement:1341>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "disabled"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    2
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "Losses_BuckConverter_v1"
+    signals_		    []
+    overrideMode_	    [0.0]
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "Losses_BuckConverter_v1"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      []
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      3
+      Version		      "1.11.1"
+      Array {
+	Type			"Handle"
+	Dimension		10
+	Simulink.SolverCC {
+	  $ObjectID		  4
+	  Version		  "1.11.1"
+	  StartTime		  "0.0"
+	  StopTime		  "4"
+	  AbsTol		  "auto"
+	  FixedStep		  "1e-6"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "100e-6"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-4"
+	  SolverMode		  "Auto"
+	  ConcurrentTasks	  off
+	  Solver		  "ode23tb"
+	  SolverName		  "ode23tb"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  5
+	  Version		  "1.11.1"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  off
+	  SaveState		  off
+	  SignalLogging		  off
+	  DSMLogging		  off
+	  InspectSignalLogs	  off
+	  SaveTime		  off
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  6
+	  Version		  "1.11.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  AccelParallelForEachSubsystem	on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  7
+	  Version		  "1.11.1"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "none"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Enable All"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  8
+	  Version		  "1.11.1"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  9
+	  Version		  "1.11.1"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  10
+	  Version		  "1.11.1"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  11
+	  Version		  "1.11.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "GenerateSLWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateSLWebview	  off
+	  GenerateCodeMetricsReport off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      12
+	      Version		      "1.11.1"
+	      Array {
+		Type			"Cell"
+		Dimension		21
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      13
+	      Version		      "1.11.1"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      CodeExecutionProfiling  off
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  14
+	  Version		  "1.11.1"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	}
+	SSC.SimscapeCC {
+	  $ObjectID		  15
+	  Version		  "1.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "Name"
+	    PropName		    "DisabledProps"
+	  }
+	  Name			  "Simscape"
+	  EditingMode		  "Full"
+	  ExplicitSolverDiagnosticOptions "none"
+	  InputDerivativeDiagnosticOptions "warning"
+	  GlobalZcOffDiagnosticOptions "warning"
+	  SimscapeLogType	  "none"
+	  SimscapeLogName	  "simlog"
+	  SimscapeLogDecimation	  1
+	  SimscapeLogLimitData	  on
+	  SimscapeLogDataHistory  5000
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ -7, 80, 955, 886 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    3
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      BusSelector
+      OutputAsBus	      off
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      DiscretePulseGenerator
+      PulseType		      "Sample based"
+      TimeSource	      "Use simulation time"
+      Amplitude		      "1"
+      Period		      "2"
+      PulseWidth	      "1"
+      PhaseDelay	      "0"
+      SampleTime	      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      From
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Goto
+      IconDisplay	      "Tag"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      PMIOPort
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Scope
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Step
+      Time		      "1"
+      Before		      "0"
+      After		      "1"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Stop
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      AllowDiffInputSizes     off
+    }
+    Block {
+      BlockType		      ToWorkspace
+      VariableName	      "simulink_output"
+      MaxDataPoints	      "1000"
+      Decimation	      "1"
+      SampleTime	      "0"
+      FixptAsFi		      off
+      NumInputs		      "1"
+    }
+  }
+  System {
+    Name		    "Loss_BuckConverter"
+    Location		    [65, 125, 810, 960]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "6719"
+    Block {
+      BlockType		      Reference
+      Name		      "300 Vdc "
+      SID		      "22"
+      Description	      "source block"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [76, 225, 104, 260]
+      ZOrder		      -1
+      BlockRotation	      270
+      BackgroundColor	      "yellow"
+      NamePlacement	      "alternate"
+      AttributesFormatString  "\\n"
+      LibraryVersion	      "1.2088"
+      SourceBlock	      "powerlib/Electrical\nSources/DC Voltage Source"
+      SourceType	      "DC Voltage Source"
+      Amplitude		      "300"
+      Measurements	      "None"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Add2"
+      SID		      "6671"
+      Ports		      [1, 1]
+      Position		      [615, 574, 635, 596]
+      ZOrder		      -2
+      ForegroundColor	      "red"
+      ShowName		      off
+      Inputs		      "+"
+      InputSameDT	      off
+      OutDataTypeStr	      "double"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Additional Scopes\n& Measurements"
+      SID		      "5368"
+      Ports		      [0, 6]
+      Position		      [50, 522, 160, 658]
+      ZOrder		      -3
+      BackgroundColor	      "green"
+      DropShadow	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Additional Scopes\n& Measurements"
+	Location		[145, 154, 956, 765]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Reference
+	  Name			  "1st-Order \nFilter"
+	  SID			  "6598"
+	  Ports			  [1, 1]
+	  Position		  [220, 162, 255, 188]
+	  ZOrder		  -3
+	  ShowName		  off
+	  LibraryVersion	  "1.644"
+	  FontName		  "Verdana"
+	  FontSize		  11
+	  SourceBlock		  "powerlib_extras/Control \nBlocks/1st-Order \nFilter"
+	  SourceType		  "First-Order Filter"
+	  FilterType		  "Lowpass"
+	  Tc			  "20e-3"
+	  Initialize		  off
+	  Vac_Init		  "[0.8 -25 60]"
+	  Vdc_Init		  "-0.4"
+	  PlotResponse		  off
+	  param1		  "[1 500 1]"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "1st-Order \nFilter1"
+	  SID			  "6599"
+	  Ports			  [1, 1]
+	  Position		  [220, 192, 255, 218]
+	  ZOrder		  -3
+	  ShowName		  off
+	  LibraryVersion	  "1.644"
+	  FontName		  "Verdana"
+	  FontSize		  11
+	  SourceBlock		  "powerlib_extras/Control \nBlocks/1st-Order \nFilter"
+	  SourceType		  "First-Order Filter"
+	  FilterType		  "Lowpass"
+	  Tc			  "20e-3"
+	  Initialize		  off
+	  Vac_Init		  "[0.8 -25 60]"
+	  Vdc_Init		  "-0.4"
+	  PlotResponse		  off
+	  param1		  "[1 500 1]"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "1st-Order \nFilter2"
+	  SID			  "6600"
+	  Ports			  [1, 1]
+	  Position		  [285, 347, 320, 373]
+	  ZOrder		  -3
+	  ShowName		  off
+	  LibraryVersion	  "1.644"
+	  FontName		  "Verdana"
+	  FontSize		  11
+	  SourceBlock		  "powerlib_extras/Control \nBlocks/1st-Order \nFilter"
+	  SourceType		  "First-Order Filter"
+	  FilterType		  "Lowpass"
+	  Tc			  "20e-3"
+	  Initialize		  off
+	  Vac_Init		  "[0.8 -25 60]"
+	  Vdc_Init		  "-0.4"
+	  PlotResponse		  off
+	  param1		  "[1 500 1]"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "1st-Order \nFilter3"
+	  SID			  "6601"
+	  Ports			  [1, 1]
+	  Position		  [285, 417, 320, 443]
+	  ZOrder		  -3
+	  ShowName		  off
+	  LibraryVersion	  "1.644"
+	  FontName		  "Verdana"
+	  FontSize		  11
+	  SourceBlock		  "powerlib_extras/Control \nBlocks/1st-Order \nFilter"
+	  SourceType		  "First-Order Filter"
+	  FilterType		  "Lowpass"
+	  Tc			  "20e-3"
+	  Initialize		  off
+	  Vac_Init		  "[0.8 -25 60]"
+	  Vdc_Init		  "-0.4"
+	  PlotResponse		  off
+	  param1		  "[1 500 1]"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Add3"
+	  SID			  "5369"
+	  Ports			  [1, 1]
+	  Position		  [640, 242, 660, 268]
+	  ZOrder		  -2
+	  ShowName		  off
+	  Inputs		  "+"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector1"
+	  SID			  "5370"
+	  Ports			  [1, 1]
+	  Position		  [405, 46, 410, 84]
+	  ZOrder		  -3
+	  ShowName		  off
+	  OutputSignals		  "Tcase"
+	  OutputAsBus		  on
+	}
+	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector6"
+	  SID			  "5371"
+	  Ports			  [1, 1]
+	  Position		  [135, 38, 140, 92]
+	  ZOrder		  -3
+	  ShowName		  off
+	  OutputSignals		  "Tj_IGBT1,Tj_Diode2"
+	  OutputAsBus		  on
+	}
+	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector8"
+	  SID			  "5372"
+	  Ports			  [1, 2]
+	  Position		  [130, 159, 135, 221]
+	  ZOrder		  -3
+	  ShowName		  off
+	  OutputSignals		  "Ptot_IGBT1,Ptot_Diode2"
+	  Port {
+	    PortNumber		    1
+	    Name		    "<Ptot_IGBT1>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "<Ptot_Diode2>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From17"
+	  SID			  "5374"
+	  Position		  [325, 58, 380, 72]
+	  ZOrder		  -9
+	  ShowName		  off
+	  GotoTag		  "mHB"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From2"
+	  SID			  "5375"
+	  Position		  [35, 58, 90, 72]
+	  ZOrder		  -9
+	  ShowName		  off
+	  GotoTag		  "mHB"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Losses (kW)"
+	  SID			  "5389"
+	  Ports			  [1]
+	  Position		  [640, 169, 665, 211]
+	  ZOrder		  -13
+	  BackgroundColor	  "green"
+	  Floating		  off
+	  Location		  [369, 328, 1087, 781]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  ZoomMode		  "yonly"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  List {
+	    ListType		    ScopeGraphics
+	    FigureColor		    "[0.5 0.5 0.5]"
+	    AxesColor		    "[0 0 0]"
+	    AxesTickColor	    "[1 1 1]"
+	    LineColors		    "[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	    LineStyles		    "-|-|-|-|-|-"
+	    LineWidths		    "[0.5 0.5 0.5 0.5 0.5 0.5]"
+	    MarkerStyles	    "none|none|none|none|none|none"
+	  }
+	  TimeRange		  "4"
+	  YMin			  "0"
+	  YMax			  "0.2"
+	  SaveName		  "Losses_Continuous"
+	  DataFormat		  "StructureWithTime"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "500000"
+	  Decimation		  "100"
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Multimeter"
+	  SID			  "5633"
+	  Ports			  [0, 1, 0, 0, 0, 1]
+	  Position		  [175, 341, 215, 379]
+	  ZOrder		  -7
+	  LibraryVersion	  "1.2088"
+	  FontName		  "Verdana"
+	  FontSize		  11
+	  SourceBlock		  "powerlib/Measurements/Multimeter"
+	  SourceType		  "MultimeterPSB"
+	  PhasorSimulation	  off
+	  OutputType		  "Complex"
+	  sel			  "2"
+	  L			  "5"
+	  Gain			  "1"
+	  yselected		  "{'Ub: Load'};"
+	  PSBOutputType		  "1"
+	  PSBequivalent		  "0"
+	  AxesSetting		  "[0,0.1,-100,100]"
+	  Display		  "0"
+	  SavedBlockNames	  "-11"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Multimeter1"
+	  SID			  "5634"
+	  Ports			  [0, 1, 0, 0, 0, 1]
+	  Position		  [180, 411, 220, 449]
+	  ZOrder		  -7
+	  LibraryVersion	  "1.2088"
+	  FontName		  "Verdana"
+	  FontSize		  11
+	  SourceBlock		  "powerlib/Measurements/Multimeter"
+	  SourceType		  "MultimeterPSB"
+	  PhasorSimulation	  off
+	  OutputType		  "Complex"
+	  sel			  "3"
+	  L			  "5"
+	  Gain			  "1"
+	  yselected		  "{'Ib: Choke'};"
+	  PSBOutputType		  "1"
+	  PSBequivalent		  "0"
+	  AxesSetting		  "[0,0.1,-100,100]"
+	  Display		  "0"
+	  SavedBlockNames	  "-11"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  SID			  "5628"
+	  Ports			  [2, 1]
+	  Position		  [350, 160, 355, 220]
+	  ZOrder		  -16
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Losses IGBT1 (yellow) -  Diode2 (magenta)"
+	    PropagatedSignals	    ", "
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product of\nElements"
+	  SID			  "5635"
+	  Ports			  [2, 1]
+	  Position		  [395, 497, 425, 528]
+	  ZOrder		  -20
+	  ShowName		  off
+	  Inputs		  "**"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Tcase (C)"
+	  SID			  "5387"
+	  Ports			  [1]
+	  Position		  [475, 45, 495, 85]
+	  ZOrder		  -21
+	  BackgroundColor	  "green"
+	  Floating		  off
+	  Location		  [218, 69, 590, 364]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  ZoomMode		  "yonly"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  List {
+	    ListType		    ScopeGraphics
+	    FigureColor		    "[0.5 0.5 0.5]"
+	    AxesColor		    "[0 0 0]"
+	    AxesTickColor	    "[1 1 1]"
+	    LineColors		    "[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	    LineStyles		    "-|-|-|-|-|-"
+	    LineWidths		    "[0.5 0.5 0.5 0.5 0.5 0.5]"
+	    MarkerStyles	    "none|none|none|none|none|none"
+	  }
+	  TimeRange		  "4"
+	  YMin			  "40"
+	  YMax			  "100"
+	  SaveName		  "psb1phPWM2_str2"
+	  DataFormat		  "StructureWithTime"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "500000"
+	  Decimation		  "100"
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Vmean_Load\n(V)"
+	  SID			  "5849"
+	  Ports			  [1]
+	  Position		  [550, 390, 570, 420]
+	  ZOrder		  -22
+	  BackgroundColor	  "green"
+	  NamePlacement		  "alternate"
+	  Floating		  off
+	  Location		  [648, 105, 1056, 355]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  ZoomMode		  "yonly"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  List {
+	    ListType		    ScopeGraphics
+	    FigureColor		    "[0.5 0.5 0.5]"
+	    AxesColor		    "[0 0 0]"
+	    AxesTickColor	    "[1 1 1]"
+	    LineColors		    "[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	    LineStyles		    "-|-|-|-|-|-"
+	    LineWidths		    "[0.5 0.5 0.5 0.5 0.5 0.5]"
+	    MarkerStyles	    "none|none|none|none|none|none"
+	  }
+	  TimeRange		  "4"
+	  YMin			  "110.6172839506173"
+	  YMax			  "135.7197086282959"
+	  SaveName		  "Vload_Continuous1"
+	  DataFormat		  "StructureWithTime"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "500000"
+	  Decimation		  "100"
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "to-kW"
+	  SID			  "5638"
+	  Position		  [455, 500, 485, 530]
+	  ZOrder		  -11
+	  Gain			  "1e-3"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "to-kW1"
+	  SID			  "5647"
+	  Position		  [285, 160, 315, 190]
+	  ZOrder		  -11
+	  NamePlacement		  "alternate"
+	  Gain			  "1e-3"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "to-kW2"
+	  SID			  "5648"
+	  Position		  [285, 190, 315, 220]
+	  ZOrder		  -11
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  Gain			  "1e-3"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Tj_IGBT1_Diode2"
+	  SID			  "5644"
+	  Position		  [185, 58, 215, 72]
+	  ZOrder		  -9
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Total_Losses"
+	  SID			  "5390"
+	  Position		  [695, 248, 725, 262]
+	  ZOrder		  -9
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "V_Load"
+	  SID			  "5639"
+	  Position		  [520, 303, 550, 317]
+	  ZOrder		  -9
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Pmean_Load_kW"
+	  SID			  "5642"
+	  Position		  [540, 508, 570, 522]
+	  ZOrder		  -9
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Vmean_Load"
+	  SID			  "5640"
+	  Position		  [465, 353, 495, 367]
+	  ZOrder		  -9
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Imean_Choke"
+	  SID			  "5641"
+	  Position		  [435, 423, 465, 437]
+	  ZOrder		  -9
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Bus\nSelector1"
+	  SrcPort		  1
+	  DstBlock		  "Tcase (C)"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From17"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nSelector1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From2"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  Branch {
+	    DstBlock		    "Bus\nSelector6"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 125]
+	    DstBlock		    "Bus\nSelector8"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Name			  "<Ptot_IGBT1>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector8"
+	  SrcPort		  1
+	  DstBlock		  "1st-Order \nFilter"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<Ptot_Diode2>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector8"
+	  SrcPort		  2
+	  DstBlock		  "1st-Order \nFilter1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Losses IGBT1 (yellow) -  Diode2 (magenta)"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  Points		  [245, 0]
+	  Branch {
+	    DstBlock		    "Losses (kW)"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [10, 0; 0, 65]
+	    DstBlock		    "Add3"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Add3"
+	  SrcPort		  1
+	  DstBlock		  "Total_Losses"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Multimeter"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  Branch {
+	    Points		    [0, -50]
+	    DstBlock		    "V_Load"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "1st-Order \nFilter2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Product of\nElements"
+	  SrcPort		  1
+	  DstBlock		  "to-kW"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Bus\nSelector6"
+	  SrcPort		  1
+	  DstBlock		  "Tj_IGBT1_Diode2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "to-kW1"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "to-kW2"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "to-kW"
+	  SrcPort		  1
+	  DstBlock		  "Pmean_Load_kW"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "1st-Order \nFilter"
+	  SrcPort		  1
+	  DstBlock		  "to-kW1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "1st-Order \nFilter1"
+	  SrcPort		  1
+	  DstBlock		  "to-kW2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "1st-Order \nFilter3"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  Branch {
+	    DstBlock		    "Imean_Choke"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 90]
+	    DstBlock		    "Product of\nElements"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "1st-Order \nFilter2"
+	  SrcPort		  1
+	  Points		  [45, 0]
+	  Branch {
+	    Points		    [0, 145]
+	    DstBlock		    "Product of\nElements"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [45, 0]
+	    Branch {
+	      DstBlock		      "Vmean_Load"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 45]
+	      DstBlock		      "Vmean_Load\n(V)"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Multimeter1"
+	  SrcPort		  1
+	  DstBlock		  "1st-Order \nFilter3"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Ambient\nTemperature (C)"
+      SID		      "5176"
+      Position		      [345, 359, 370, 381]
+      ZOrder		      -5
+      ForegroundColor	      "orange"
+      NamePlacement	      "alternate"
+      Value		      "40"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Choke"
+      SID		      "5122"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [330, 203, 395, 227]
+      ZOrder		      -13
+      BackgroundColor	      "yellow"
+      LibraryVersion	      "1.2088"
+      FontName		      "Verdana"
+      FontSize		      11
+      SourceBlock	      "powerlib/Elements/Series RLC Branch"
+      SourceType	      "Series RLC Branch"
+      LConnTagsString	      "__new0"
+      RConnTagsString	      "__new0"
+      BranchType	      "RL"
+      Resistance	      "10e-3"
+      Inductance	      "3e-3"
+      SetiL0		      off
+      InitialCurrent	      "100"
+      Capacitance	      "1e-6"
+      Setx0		      off
+      InitialVoltage	      "0"
+      Measurements	      "Branch current"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      SID		      "6663"
+      Position		      [395, 106, 410, 124]
+      ZOrder		      -5
+      BlockMirror	      on
+      ForegroundColor	      "blue"
+      ShowName		      off
+      Value		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "ExtraLoad"
+      SID		      "5788"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [559, 240, 581, 280]
+      ZOrder		      -13
+      BlockRotation	      270
+      BlockMirror	      on
+      BackgroundColor	      "yellow"
+      LibraryVersion	      "1.2088"
+      FontName		      "Verdana"
+      FontSize		      11
+      SourceBlock	      "powerlib/Elements/Series RLC Branch"
+      SourceType	      "Series RLC Branch"
+      LConnTagsString	      "__new0"
+      RConnTagsString	      "__new0"
+      BranchType	      "R"
+      Resistance	      "125^2/2.5e3"
+      Inductance	      "1e-3"
+      SetiL0		      off
+      InitialCurrent	      "0"
+      Capacitance	      "100e-6"
+      Setx0		      off
+      InitialVoltage	      "0"
+      Measurements	      "Branch voltage and current"
+    }
+    Block {
+      BlockType		      DiscretePulseGenerator
+      Name		      "Fsw=10kHz"
+      SID		      "6660"
+      Ports		      [0, 1]
+      Position		      [500, 68, 525, 92]
+      ZOrder		      -13
+      BlockMirror	      on
+      ForegroundColor	      "blue"
+      NamePlacement	      "alternate"
+      PulseType		      "Time based"
+      Period		      "1/10e3"
+      PulseWidth	      "42"
+    }
+    Block {
+      BlockType		      DiscretePulseGenerator
+      Name		      "Fsw=2.5 kHz"
+      SID		      "6666"
+      Ports		      [0, 1]
+      Position		      [500, 108, 525, 132]
+      ZOrder		      -13
+      BlockMirror	      on
+      ForegroundColor	      "blue"
+      PulseType		      "Time based"
+      Period		      "1/2.5e3"
+      PulseWidth	      "42"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto2"
+      SID		      "4521"
+      Position		      [210, 142, 250, 158]
+      ZOrder		      -10
+      BackgroundColor	      "yellow"
+      ShowName		      off
+      GotoTag		      "mHB"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Ground"
+      SID		      "5126"
+      Ports		      [0, 0, 0, 0, 0, 1]
+      Position		      [430, 305, 450, 325]
+      ZOrder		      -3
+      BlockRotation	      270
+      BlockMirror	      on
+      ShowName		      off
+      LibraryVersion	      "1.2088"
+      FontName		      "Verdana"
+      FontSize		      11
+      SourceBlock	      "powerlib/Elements/Ground"
+      SourceType	      "Ground"
+      LConnTagsString	      "a"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Ground1"
+      SID		      "5787"
+      Ports		      [0, 0, 0, 0, 0, 1]
+      Position		      [560, 305, 580, 325]
+      ZOrder		      -3
+      BlockRotation	      270
+      BlockMirror	      on
+      ShowName		      off
+      LibraryVersion	      "1.2088"
+      FontName		      "Verdana"
+      FontSize		      11
+      SourceBlock	      "powerlib/Elements/Ground"
+      SourceType	      "Ground"
+      LConnTagsString	      "a"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Ground2"
+      SID		      "5193"
+      Ports		      [0, 0, 0, 0, 0, 1]
+      Position		      [110, 325, 130, 345]
+      ZOrder		      -3
+      BlockRotation	      270
+      BlockMirror	      on
+      ShowName		      off
+      LibraryVersion	      "1.2088"
+      FontName		      "Verdana"
+      FontSize		      11
+      SourceBlock	      "powerlib/Elements/Ground"
+      SourceType	      "Ground"
+      LConnTagsString	      "a"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Half-bridge IGBT\nwith Loss Calculation\n(Continuous)"
+      SID		      "6719"
+      Ports		      [1, 1, 0, 0, 0, 2, 2]
+      Position		      [190, 169, 265, 261]
+      ZOrder		      -22
+      BlockMirror	      on
+      BackgroundColor	      "yellow"
+      DropShadow	      on
+      LibraryVersion	      "1.8"
+      SourceBlock	      "LossModelib/Half-bridge IGBT\nwith Loss Calculation\n(Continuous)"
+      SourceType	      "Half-Bridge IGBT with thermal model and losses calculation"
+      Ron		      "1e-3"
+      IGBT_Type		      "Fuji: Half-bridge IGBT 600V/150A"
+      PlotSpec_IGBT_On	      off
+      ShowDataSheet_IGBT_On   off
+      Diode_Type	      "Fuji: Half-bridge IGBT 600V/150A"
+      PlotSpec_Diode_On	      off
+      ShowDataSheet_Diode_On  off
+      Tj_Init		      "40"
+      PulseDuration	      "1e-6"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Ideal Switch"
+      SID		      "5786"
+      Ports		      [1, 0, 0, 0, 0, 1, 1]
+      Position		      [475, 198, 525, 222]
+      ZOrder		      -8
+      BackgroundColor	      "yellow"
+      ShowName		      off
+      LibraryVersion	      "1.2088"
+      FontName		      "Arial"
+      SourceBlock	      "powerlib/Power\nElectronics/Ideal Switch"
+      SourceType	      "Ideal Switch"
+      Ron		      "0.001"
+      Lon		      "0"
+      IC		      "0"
+      Rs		      "1e5"
+      Cs		      "inf"
+      Measurements	      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Imean_Choke (A) "
+      SID		      "5395"
+      Ports		      [1]
+      Position		      [250, 772, 315, 798]
+      ZOrder		      -1
+      BackgroundColor	      "green"
+      FontName		      "Arial"
+      Format		      "bank"
+      Decimation	      "3000"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Junction Temp. (C)\nIGBT1 and Diode2 (magenta)"
+      SID		      "5645"
+      Ports		      [1]
+      Position		      [550, 489, 570, 521]
+      ZOrder		      -25
+      BackgroundColor	      "green"
+      NamePlacement	      "alternate"
+      Floating		      off
+      Location		      [820, 698, 1230, 976]
+      Open		      on
+      NumInputPorts	      "1"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.5 0.5 0.5]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      TimeRange		      "4"
+      YMin		      "40"
+      YMax		      "160"
+      SaveName		      "Tj_SPS_continuous"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      MaxDataPoints	      "500000"
+      Decimation	      "100"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Load"
+      SID		      "5125"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [429, 240, 451, 280]
+      ZOrder		      -13
+      BlockRotation	      270
+      BlockMirror	      on
+      BackgroundColor	      "yellow"
+      LibraryVersion	      "1.2088"
+      FontName		      "Verdana"
+      FontSize		      11
+      SourceBlock	      "powerlib/Elements/Series RLC Branch"
+      SourceType	      "Series RLC Branch"
+      LConnTagsString	      "__new0"
+      RConnTagsString	      "__new0"
+      BranchType	      "R"
+      Resistance	      "125^2/12e3"
+      Inductance	      "1e-3"
+      SetiL0		      off
+      InitialCurrent	      "0"
+      Capacitance	      "100e-6"
+      Setx0		      off
+      InitialVoltage	      "0"
+      Measurements	      "Branch voltage and current"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Max\ntemp"
+      SID		      "6672"
+      Ports		      [1, 1]
+      Position		      [540, 571, 580, 599]
+      ZOrder		      -5
+      ForegroundColor	      "red"
+      LibraryVersion	      "1.256"
+      SourceBlock	      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+      SourceType	      "Compare To Constant"
+      relop		      ">"
+      const		      "150"
+      OutDataTypeStr	      "uint8"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux"
+      SID		      "6662"
+      Ports		      [2, 1]
+      Position		      [365, 92, 370, 123]
+      ZOrder		      -16
+      BlockMirror	      on
+      ForegroundColor	      "blue"
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Pmean_Load\n(kW)"
+      SID		      "5394"
+      Ports		      [1]
+      Position		      [440, 585, 460, 615]
+      ZOrder		      -29
+      BackgroundColor	      "green"
+      NamePlacement	      "alternate"
+      Floating		      off
+      Location		      [825, 406, 1222, 637]
+      Open		      on
+      NumInputPorts	      "1"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.5 0.5 0.5]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      TimeRange		      "4"
+      YMin		      "10"
+      YMax		      "15"
+      SaveName		      "Pmean_Load_SPS_continuous"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      MaxDataPoints	      "500000"
+      Decimation	      "100"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Pmean_Load (kW) "
+      SID		      "5646"
+      Ports		      [1]
+      Position		      [250, 665, 310, 695]
+      ZOrder		      -1
+      BackgroundColor	      "green"
+      FontName		      "Arial"
+      Format		      "bank"
+      Decimation	      "3000"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "SimScape Solver\nConfiguration"
+      SID		      "5851"
+      Ports		      [0, 0, 0, 0, 0, 0, 1]
+      Position		      [220, 388, 260, 412]
+      ZOrder		      -5
+      ForegroundColor	      "orange"
+      LibraryVersion	      "1.1"
+      SourceBlock	      "nesl_utility/Solver\nConfiguration"
+      SourceType	      "Solver\nConfiguration"
+      PhysicalDomain	      "network_engine_domain"
+      LeftPortType	      "input"
+      RightPortType	      "generic"
+      SubClassName	      "solver"
+      DoDC		      off
+      ResidualTolerance	      "1e-9"
+      UseLocalSolver	      on
+      LocalSolverChoice	      "NE_TRAPEZOIDAL_ADVANCER"
+      LocalSolverSampleTime   "100e-6"
+      DoFixedCost	      off
+      MaxNonlinIter	      "2"
+      MaxModeIter	      "1"
+      LinearAlgebra	      "Sparse"
+      Accelerate	      off
+      Profile		      off
+      UseLocalSampling	      off
+      DelaysMemoryBudget      "1024"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Simscape\nThermal Model"
+      SID		      "5286"
+      Ports		      [1, 1, 0, 0, 0, 1]
+      Position		      [430, 353, 495, 417]
+      ZOrder		      -32
+      ForegroundColor	      "orange"
+      DropShadow	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskType		      "Simscape Thermal model (2-cell Cauer network)"
+      MaskPromptString	      "Thermal resistances  [case-to-sink  sink-to-ambient ] (K/W):|Thermal capacitances  [case"
+      "  sink ] (J/K):|Initial temperature (degrees Celsius)"
+      MaskStyleString	      "edit,edit,edit"
+      MaskVariables	      "Rth=@1;Cth=@2;Tinit=@3;"
+      MaskTunableValueString  "on,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskToolTipString	      "on,on,on"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "[ 0.05  0.125 ]|[ 0.25  0.25 ]|40"
+      System {
+	Name			"Simscape\nThermal Model"
+	Location		[217, 281, 1062, 742]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Ta"
+	  SID			  "5287"
+	  Position		  [490, 303, 520, 317]
+	  ZOrder		  -1
+	  ForegroundColor	  "orange"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Conductive\nHeat Transfer\nCase-to-Sink"
+	  SID			  "5288"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [175, 157, 265, 203]
+	  ZOrder		  33
+	  BlockRotation		  180
+	  BlockMirror		  on
+	  ForegroundColor	  "orange"
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  SourceBlock		  "fl_lib/Thermal/Thermal Elements/Conductive Heat\nTransfer"
+	  SourceType		  "Conductive Heat\nTransfer"
+	  SourceFile		  "foundation.thermal.elements.conduction"
+	  ComponentPath		  "foundation.thermal.elements.conduction"
+	  ComponentVariants	  "foundation.thermal.elements.conduction"
+	  ComponentVariantNames	  "conduction"
+	  ClassName		  "conduction"
+	  SchemaVersion		  "1"
+	  area			  "1"
+	  area_unit		  "m^2"
+	  thickness		  "1"
+	  thickness_unit	  "m"
+	  th_cond		  "1/Rth(1)"
+	  th_cond_unit		  "W/(m*K)"
+	  Q_Log			  "off"
+	  T_Log			  "off"
+	  LocalVarNames		  "|Q|T"
+	  LocalVarDescs		  "|Q|T"
+	  LocalVarLogging	  "[0 0]"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Convective \nHeat Transfer\nSink-to-Ambient"
+	  SID			  "5291"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [490, 162, 565, 198]
+	  ZOrder		  -3
+	  ForegroundColor	  "orange"
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  SourceBlock		  "fl_lib/Thermal/Thermal Elements/Convective Heat\nTransfer"
+	  SourceType		  "Convective Heat\nTransfer"
+	  SourceFile		  "foundation.thermal.elements.convection"
+	  ComponentPath		  "foundation.thermal.elements.convection"
+	  ComponentVariants	  "foundation.thermal.elements.convection"
+	  ComponentVariantNames	  "convection"
+	  ClassName		  "convection"
+	  SchemaVersion		  "1"
+	  area			  "1"
+	  area_unit		  "m^2"
+	  heat_tr_coeff		  "1/Rth(2)"
+	  heat_tr_coeff_unit	  "W/(m^2 * K)"
+	  Q_Log			  "off"
+	  T_Log			  "off"
+	  LocalVarNames		  "|Q|T"
+	  LocalVarDescs		  "|Q|T"
+	  LocalVarLogging	  "[0 0]"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "PS2S"
+	  SID			  "6699"
+	  Ports			  [0, 1, 0, 0, 0, 1]
+	  Position		  [430, 49, 470, 81]
+	  ForegroundColor	  "orange"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "PS2S"
+	    Location		    [652, 487, 1193, 626]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add1"
+	      SID		      "6700"
+	      Ports		      [2, 1]
+	      Position		      [290, 31, 310, 64]
+	      ZOrder		      -2
+	      ShowName		      off
+	      Inputs		      "+-"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "K1"
+	      SID		      "6701"
+	      Position		      [235, 44, 265, 66]
+	      ZOrder		      -5
+	      Value		      "273"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "PS-Simulink\nConverter"
+	      SID		      "6702"
+	      Ports		      [0, 1, 0, 0, 0, 1]
+	      Position		      [160, 25, 190, 55]
+	      ZOrder		      -6
+	      ShowName		      off
+	      LibraryVersion	      "1.1"
+	      SourceBlock	      "nesl_utility/PS-Simulink\nConverter"
+	      SourceType	      "PS-Simulink\nConverter"
+	      PhysicalDomain	      "network_engine_domain"
+	      LeftPortType	      "input"
+	      RightPortType	      "output"
+	      SubClassName	      "ps_output"
+	      Unit		      "1"
+	      AffineConversion	      off
+	    }
+	    Block {
+	      BlockType		      PMIOPort
+	      Name		      "In"
+	      SID		      "6703"
+	      Position		      [65, 33, 95, 47]
+	      Port		      "1"
+	      Side		      "Left"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out"
+	      SID		      "6704"
+	      Position		      [370, 43, 400, 57]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Add1"
+	      SrcPort		      1
+	      DstBlock		      "Out"
+	      DstPort		      1
+	    }
+	    Line {
+	      LineType		      "Connection"
+	      SrcBlock		      "In"
+	      SrcPort		      RConn1
+	      DstBlock		      "PS-Simulink\nConverter"
+	      DstPort		      LConn1
+	    }
+	    Line {
+	      SrcBlock		      "PS-Simulink\nConverter"
+	      SrcPort		      1
+	      DstBlock		      "Add1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "K1"
+	      SrcPort		      1
+	      DstBlock		      "Add1"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "S2PS"
+	  SID			  "6705"
+	  Ports			  [1, 0, 0, 0, 0, 0, 1]
+	  Position		  [555, 292, 590, 328]
+	  ForegroundColor	  "orange"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "S2PS"
+	    Location		    [463, 823, 718, 913]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In"
+	      SID		      "6706"
+	      Position		      [20, 48, 50, 62]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add"
+	      SID		      "6707"
+	      Ports		      [2, 1]
+	      Position		      [95, 26, 115, 64]
+	      ZOrder		      -2
+	      ShowName		      off
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "K2"
+	      SID		      "6708"
+	      Position		      [15, 26, 45, 44]
+	      ZOrder		      -5
+	      ShowName		      off
+	      Value		      "273"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Simulink-PS\nConverter"
+	      SID		      "6709"
+	      Ports		      [1, 0, 0, 0, 0, 0, 1]
+	      Position		      [145, 27, 175, 63]
+	      ZOrder		      -4
+	      ShowName		      off
+	      LibraryVersion	      "1.1"
+	      SourceBlock	      "nesl_utility/Simulink-PS\nConverter"
+	      SourceType	      "Simulink-PS\nConverter"
+	      PhysicalDomain	      "network_engine_domain"
+	      LeftPortType	      "input"
+	      RightPortType	      "output"
+	      SubClassName	      "ps_input"
+	      Unit		      "1"
+	      AffineConversion	      off
+	      InputFilterTimeConstant "1e-4"
+	      UdotUserProvided	      "0"
+	    }
+	    Block {
+	      BlockType		      PMIOPort
+	      Name		      "Out"
+	      SID		      "6710"
+	      Position		      [200, 38, 230, 52]
+	      BlockMirror	      on
+	      Port		      "1"
+	      Side		      "Right"
+	    }
+	    Line {
+	      SrcBlock		      "In"
+	      SrcPort		      1
+	      DstBlock		      "Add"
+	      DstPort		      2
+	    }
+	    Line {
+	      LineType		      "Connection"
+	      SrcBlock		      "Out"
+	      SrcPort		      RConn1
+	      DstBlock		      "Simulink-PS\nConverter"
+	      DstPort		      RConn1
+	    }
+	    Line {
+	      SrcBlock		      "K2"
+	      SrcPort		      1
+	      DstBlock		      "Add"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Add"
+	      SrcPort		      1
+	      DstBlock		      "Simulink-PS\nConverter"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Temperature\nSensor"
+	  SID			  "5304"
+	  Ports			  [0, 0, 0, 0, 0, 1, 2]
+	  Position		  [350, 106, 380, 139]
+	  ZOrder		  -6
+	  ForegroundColor	  "orange"
+	  LibraryVersion	  "1.1"
+	  SourceBlock		  "fl_lib/Thermal/Thermal Sensors/Ideal Temperature\nSensor"
+	  SourceType		  "Ideal Temperature\nSensor"
+	  SourceFile		  "foundation.thermal.sensors.temperature"
+	  ComponentPath		  "foundation.thermal.sensors.temperature"
+	  ComponentVariants	  "foundation.thermal.sensors.temperature"
+	  ComponentVariantNames	  "temperature"
+	  ClassName		  "temperature"
+	  SchemaVersion		  "1"
+	  Qs_Log		  "off"
+	  Ts_Log		  "off"
+	  LocalVarNames		  "|Qs|Ts"
+	  LocalVarDescs		  "|Qs|Ts"
+	  LocalVarLogging	  "[0 0]"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Temperature\nSource"
+	  SID			  "5305"
+	  Ports			  [0, 0, 0, 0, 0, 1, 2]
+	  Position		  [628, 220, 677, 280]
+	  ZOrder		  -7
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  ForegroundColor	  "orange"
+	  LibraryVersion	  "1.1"
+	  SourceBlock		  "fl_lib/Thermal/Thermal Sources/Ideal Temperature\nSource"
+	  SourceType		  "Ideal Temperature\nSource"
+	  SourceFile		  "foundation.thermal.sources.temperature"
+	  ComponentPath		  "foundation.thermal.sources.temperature"
+	  ComponentVariants	  "foundation.thermal.sources.temperature"
+	  ComponentVariantNames	  "temperature"
+	  ClassName		  "temperature"
+	  SchemaVersion		  "1"
+	  Q_Log			  "off"
+	  T_Log			  "off"
+	  LocalVarNames		  "|Q|T"
+	  LocalVarDescs		  "|Q|T"
+	  LocalVarLogging	  "[0 0]"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Thermal \nReference"
+	  SID			  "5306"
+	  Ports			  [0, 0, 0, 0, 0, 1]
+	  Position		  [413, 135, 427, 150]
+	  ZOrder		  -8
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  ForegroundColor	  "orange"
+	  ShowName		  off
+	  LibraryVersion	  "1.1"
+	  SourceBlock		  "fl_lib/Thermal/Thermal Elements/Thermal Reference"
+	  SourceType		  "Thermal Reference"
+	  SourceFile		  "foundation.thermal.elements.reference"
+	  ComponentPath		  "foundation.thermal.elements.reference"
+	  ComponentVariants	  "foundation.thermal.elements.reference"
+	  ComponentVariantNames	  "reference"
+	  ClassName		  "reference"
+	  SchemaVersion		  "1"
+	  Q_Log			  "off"
+	  LocalVarNames		  "|Q"
+	  LocalVarDescs		  "|Q"
+	  LocalVarLogging	  "0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Thermal \nReference1"
+	  SID			  "5307"
+	  Ports			  [0, 0, 0, 0, 0, 1]
+	  Position		  [656, 335, 674, 350]
+	  ZOrder		  -9
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  ForegroundColor	  "orange"
+	  ShowName		  off
+	  LibraryVersion	  "1.1"
+	  SourceBlock		  "fl_lib/Thermal/Thermal Elements/Thermal Reference"
+	  SourceType		  "Thermal Reference"
+	  SourceFile		  "foundation.thermal.elements.reference"
+	  ComponentPath		  "foundation.thermal.elements.reference"
+	  ComponentVariants	  "foundation.thermal.elements.reference"
+	  ComponentVariantNames	  "reference"
+	  ClassName		  "reference"
+	  SchemaVersion		  "1"
+	  Q_Log			  "off"
+	  LocalVarNames		  "|Q"
+	  LocalVarDescs		  "|Q"
+	  LocalVarLogging	  "0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Thermal Mass\n(Case)"
+	  SID			  "5308"
+	  Ports			  [0, 0, 0, 0, 0, 1]
+	  Position		  [108, 225, 152, 285]
+	  ZOrder		  37
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  ForegroundColor	  "orange"
+	  LibraryVersion	  "1.1"
+	  SourceBlock		  "fl_lib/Thermal/Thermal Elements/Thermal Mass"
+	  SourceType		  "Thermal Mass"
+	  SourceFile		  "foundation.thermal.elements.mass"
+	  ComponentPath		  "foundation.thermal.elements.mass"
+	  ComponentVariants	  "foundation.thermal.elements.mass"
+	  ComponentVariantNames	  "mass"
+	  ClassName		  "mass"
+	  SchemaVersion		  "1"
+	  mass			  "Cth(1)"
+	  mass_unit		  "kg"
+	  sp_heat		  "1"
+	  sp_heat_unit		  "J/kg/K"
+	  init_temp		  "Tinit"
+	  init_temp_unit	  "C"
+	  Q_Log			  "off"
+	  LocalVarNames		  "|Q"
+	  LocalVarDescs		  "|Q"
+	  LocalVarLogging	  "0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Thermal Mass\n(Heatsink)"
+	  SID			  "5311"
+	  Ports			  [0, 0, 0, 0, 0, 1]
+	  Position		  [298, 220, 342, 280]
+	  ZOrder		  37
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  ForegroundColor	  "orange"
+	  LibraryVersion	  "1.1"
+	  SourceBlock		  "fl_lib/Thermal/Thermal Elements/Thermal Mass"
+	  SourceType		  "Thermal Mass"
+	  SourceFile		  "foundation.thermal.elements.mass"
+	  ComponentPath		  "foundation.thermal.elements.mass"
+	  ComponentVariants	  "foundation.thermal.elements.mass"
+	  ComponentVariantNames	  "mass"
+	  ClassName		  "mass"
+	  SchemaVersion		  "1"
+	  mass			  "Cth(2)"
+	  mass_unit		  "kg"
+	  sp_heat		  "1"
+	  sp_heat_unit		  "J/kg/K"
+	  init_temp		  "Tinit"
+	  init_temp_unit	  "C"
+	  Q_Log			  "off"
+	  LocalVarNames		  "|Q"
+	  LocalVarDescs		  "|Q"
+	  LocalVarLogging	  "0"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "H"
+	  SID			  "5312"
+	  Position		  [65, 170, 85, 190]
+	  ZOrder		  -12
+	  ForegroundColor	  "orange"
+	  Port			  "1"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Tsink"
+	  SID			  "5315"
+	  Position		  [520, 58, 550, 72]
+	  ZOrder		  -13
+	  ForegroundColor	  "orange"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Ta"
+	  SrcPort		  1
+	  DstBlock		  "S2PS"
+	  DstPort		  1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "H"
+	  SrcPort		  RConn1
+	  Points		  [30, 0]
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "Thermal Mass\n(Case)"
+	    DstPort		    LConn1
+	  }
+	  Branch {
+	    ConnectType		    "DEST_DEST"
+	    SrcBlock		    "Conductive\nHeat Transfer\nCase-to-Sink"
+	    SrcPort		    LConn1
+	    Points		    [-30, 0]
+	  }
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Temperature\nSource"
+	  SrcPort		  RConn2
+	  DstBlock		  "Thermal \nReference1"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "S2PS"
+	  SrcPort		  RConn1
+	  Points		  [35, 0]
+	  DstBlock		  "Temperature\nSource"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Convective \nHeat Transfer\nSink-to-Ambient"
+	  SrcPort		  RConn1
+	  Points		  [75, 0]
+	  DstBlock		  "Temperature\nSource"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  Points		  [320, 180; 155, 0]
+	  DstBlock		  "Convective \nHeat Transfer\nSink-to-Ambient"
+	  DstPort		  LConn1
+	  Branch {
+	    ConnectType		    "SRC_SRC"
+	    DstBlock		    "Conductive\nHeat Transfer\nCase-to-Sink"
+	    DstPort		    RConn1
+	  }
+	  Branch {
+	    ConnectType		    "SRC_SRC"
+	    DstBlock		    "Thermal Mass\n(Heatsink)"
+	    DstPort		    LConn1
+	  }
+	  Branch {
+	    ConnectType		    "SRC_SRC"
+	    Points		    [0, -55]
+	    DstBlock		    "Temperature\nSensor"
+	    DstPort		    LConn1
+	  }
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Temperature\nSensor"
+	  SrcPort		  RConn1
+	  Points		  [25, 0]
+	  DstBlock		  "Thermal \nReference"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Temperature\nSensor"
+	  SrcPort		  RConn2
+	  Points		  [0, -65]
+	  DstBlock		  "PS2S"
+	  DstPort		  LConn1
+	}
+	Line {
+	  SrcBlock		  "PS2S"
+	  SrcPort		  1
+	  DstBlock		  "Tsink"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Step
+      Name		      "Step"
+      SID		      "5847"
+      Position		      [500, 26, 525, 44]
+      ZOrder		      -22
+      BlockMirror	      on
+      ForegroundColor	      "red"
+      ShowName		      off
+      Time		      "2.5"
+      Before		      "1"
+      After		      "0"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Step
+      Name		      "Step1"
+      SID		      "5789"
+      Position		      [490, 165, 510, 185]
+      ZOrder		      -22
+      BlockMirror	      on
+      ForegroundColor	      "red"
+      ShowName		      off
+      Time		      "2.0"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Stop
+      Name		      "Stop_Sim"
+      SID		      "6673"
+      Position		      [670, 567, 705, 603]
+      ZOrder		      -4
+      ForegroundColor	      "red"
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Switch
+      Name		      "Switch"
+      SID		      "5848"
+      Position		      [425, 72, 450, 128]
+      ZOrder		      -18
+      BlockMirror	      on
+      ForegroundColor	      "blue"
+      ShowName		      off
+      Criteria		      "u2 ~= 0"
+      Threshold		      "0.5"
+      InputSameDT	      off
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace"
+      SID		      "6674"
+      Ports		      [1]
+      Position		      [670, 616, 725, 634]
+      ZOrder		      -7
+      ForegroundColor	      "red"
+      ShowName		      off
+      FontName		      "Arial"
+      VariableName	      "OverTemp"
+      MaxDataPoints	      "1"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Total Losses \nHalf-Bridge (kW)"
+      SID		      "5397"
+      Ports		      [1]
+      Position		      [310, 544, 330, 576]
+      ZOrder		      -38
+      BackgroundColor	      "green"
+      NamePlacement	      "alternate"
+      Floating		      off
+      Location		      [626, 556, 1014, 804]
+      Open		      off
+      NumInputPorts	      "1"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.5 0.5 0.5]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      TimeRange		      "4"
+      YMin		      "0"
+      YMax		      "0.35"
+      SaveName		      "Total_Losses_HalfBridge"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      MaxDataPoints	      "500000"
+      Decimation	      "100"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Total Losses (kW)"
+      SID		      "5651"
+      Ports		      [1]
+      Position		      [255, 615, 315, 645]
+      ZOrder		      -1
+      BackgroundColor	      "green"
+      FontName		      "Arial"
+      Format		      "bank"
+      Decimation	      "3000"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Tsink (C)"
+      SID		      "5316"
+      Ports		      [1]
+      Position		      [540, 369, 565, 401]
+      ZOrder		      -40
+      BackgroundColor	      "green"
+      Floating		      off
+      Location		      [864, 76, 1221, 368]
+      Open		      off
+      NumInputPorts	      "1"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.5 0.5 0.5]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      TimeRange		      "4"
+      YMin		      "40"
+      YMax		      "80"
+      SaveName		      "Va_Load1"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      MaxDataPoints	      "500000"
+      Decimation	      "10"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "V_Load\n(V)"
+      SID		      "5643"
+      Ports		      [1]
+      Position		      [375, 565, 395, 595]
+      ZOrder		      -41
+      BackgroundColor	      "green"
+      NamePlacement	      "alternate"
+      Floating		      off
+      Location		      [823, 99, 1231, 346]
+      Open		      on
+      NumInputPorts	      "1"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.5 0.5 0.5]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      TimeRange		      "4"
+      YMin		      "115"
+      YMax		      "140"
+      SaveName		      "Vload_SPS_continuous"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      MaxDataPoints	      "500000"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Vmean_Load (V)"
+      SID		      "5400"
+      Ports		      [1]
+      Position		      [250, 722, 315, 748]
+      ZOrder		      -1
+      BackgroundColor	      "green"
+      FontName		      "Arial"
+      Format		      "bank"
+      Decimation	      "3000"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "flowchart"
+      SID		      "6698"
+      Ports		      []
+      Position		      [226, 75, 292, 99]
+      DropShadow	      on
+      ShowName		      off
+      OpenFcn		      "winopen('Loss_BuckConverter_Help.pdf');"
+      FontName		      "Arial"
+      FontWeight	      "bold"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskDisplay	      "disp('HELP')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"flowchart"
+	Location		[466, 389, 1147, 729]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "powergui"
+      SID		      "28"
+      Ports		      []
+      Position		      [15, 15, 125, 53]
+      ZOrder		      -8
+      Priority		      "1"
+      LibraryVersion	      "1.2088"
+      UserDataPersistent      on
+      UserData		      "DataTag0"
+      FontName		      "Arial"
+      SourceBlock	      "powerlib/powergui"
+      SourceType	      "PSB option menu block"
+      SimulationMode	      "Continuous"
+      SolverType	      "Tustin"
+      SampleTime	      "50e-6"
+      frequency		      "60"
+      SPID		      on
+      DisableSnubberDevices   on
+      DisableRonSwitches      off
+      DisableVfSwitches	      on
+      SwTol		      "0"
+      Interpol		      off
+      DisplayEquations	      off
+      FunctionMessages	      off
+      frequencyindice	      "0"
+      Pbase		      "100e6"
+      ErrMax		      "1e-4"
+      Iterations	      "50"
+      UnitsV		      "kV"
+      UnitsW		      "MW"
+      echomessages	      off
+      HookPort		      off
+      EnableUseOfTLC	      off
+      x0status		      "blocks"
+      RestoreLinks	      "warning"
+      ResistiveCurrentMeasurement off
+      Ylog		      off
+      Xlog		      on
+      ShowGrid		      off
+      save		      off
+      variable		      "ZData"
+      structure		      "Vab_Inv"
+      ZoomFFT		      off
+      StartTime		      "4.5"
+      cycles		      "3"
+      DisplayStyle	      "1"
+      fundamental	      "50"
+      FreqAxis		      off
+      MaxFrequency	      "5000"
+      frequencyindicesteady   "1"
+      display		      off
+      methode		      off
+    }
+    Line {
+      SrcBlock		      "Half-bridge IGBT\nwith Loss Calculation\n(Continuous)"
+      SrcPort		      1
+      Points		      [-10, 0; 0, -35]
+      DstBlock		      "Goto2"
+      DstPort		      1
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "300 Vdc "
+      SrcPort		      RConn1
+      Points		      [0, -25; 50, 0; 0, 30]
+      DstBlock		      "Half-bridge IGBT\nwith Loss Calculation\n(Continuous)"
+      DstPort		      RConn1
+    }
+    Line {
+      LineType		      "Connection"
+      Points		      [120, 300; 25, 0; 0, -55; 30, 0]
+      DstBlock		      "Half-bridge IGBT\nwith Loss Calculation\n(Continuous)"
+      DstPort		      RConn2
+      Branch {
+	ConnectType		"SRC_DEST"
+	SrcBlock		"300 Vdc "
+	SrcPort			LConn1
+	Points			[0, 25; 30, 0]
+      }
+      Branch {
+	ConnectType		"SRC_SRC"
+	DstBlock		"Ground2"
+	DstPort			LConn1
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Half-bridge IGBT\nwith Loss Calculation\n(Continuous)"
+      SrcPort		      LConn1
+      DstBlock		      "Choke"
+      DstPort		      LConn1
+    }
+    Line {
+      LineType		      "Connection"
+      Points		      [440, 215; 20, 0]
+      DstBlock		      "Ideal Switch"
+      DstPort		      LConn1
+      Branch {
+	ConnectType		"SRC_DEST"
+	SrcBlock		"Choke"
+	SrcPort			RConn1
+	Points			[30, 0]
+      }
+      Branch {
+	ConnectType		"SRC_SRC"
+	DstBlock		"Load"
+	DstPort			LConn1
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Ground"
+      SrcPort		      LConn1
+      DstBlock		      "Load"
+      DstPort		      RConn1
+    }
+    Line {
+      LineType		      "Connection"
+      Points		      [295, 400; 0, -155; -15, 0]
+      DstBlock		      "Half-bridge IGBT\nwith Loss Calculation\n(Continuous)"
+      DstPort		      LConn2
+      Branch {
+	ConnectType		"SRC_DEST"
+	SrcBlock		"Simscape\nThermal Model"
+	SrcPort			LConn1
+	Points			[-120, 0]
+      }
+      Branch {
+	ConnectType		"SRC_SRC"
+	DstBlock		"SimScape Solver\nConfiguration"
+	DstPort			RConn1
+      }
+    }
+    Line {
+      SrcBlock		      "Ambient\nTemperature (C)"
+      SrcPort		      1
+      DstBlock		      "Simscape\nThermal Model"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Simscape\nThermal Model"
+      SrcPort		      1
+      DstBlock		      "Tsink (C)"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Additional Scopes\n& Measurements"
+      SrcPort		      2
+      Points		      [65, 0]
+      Branch {
+	DstBlock		"Total Losses \nHalf-Bridge (kW)"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 70]
+	DstBlock		"Total Losses (kW)"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Additional Scopes\n& Measurements"
+      SrcPort		      3
+      DstBlock		      "V_Load\n(V)"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Additional Scopes\n& Measurements"
+      SrcPort		      1
+      Points		      [40, 0; 0, -35; 305, 0]
+      Branch {
+	DstBlock		"Junction Temp. (C)\nIGBT1 and Diode2 (magenta)"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 80]
+	DstBlock		"Max\ntemp"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Additional Scopes\n& Measurements"
+      SrcPort		      4
+      Points		      [50, 0]
+      Branch {
+	Points			[0, 80]
+	DstBlock		"Pmean_Load (kW) "
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Pmean_Load\n(kW)"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Additional Scopes\n& Measurements"
+      SrcPort		      5
+      Points		      [35, 0; 0, 115]
+      DstBlock		      "Vmean_Load (V)"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Additional Scopes\n& Measurements"
+      SrcPort		      6
+      Points		      [15, 0; 0, 145]
+      DstBlock		      "Imean_Choke (A) "
+      DstPort		      1
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Ground1"
+      SrcPort		      LConn1
+      DstBlock		      "ExtraLoad"
+      DstPort		      RConn1
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "ExtraLoad"
+      SrcPort		      LConn1
+      Points		      [0, -15]
+      DstBlock		      "Ideal Switch"
+      DstPort		      RConn1
+    }
+    Line {
+      SrcBlock		      "Step1"
+      SrcPort		      1
+      Points		      [-30, 0; 0, 30]
+      DstBlock		      "Ideal Switch"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      DstBlock		      "Mux"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Switch"
+      SrcPort		      1
+      DstBlock		      "Mux"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mux"
+      SrcPort		      1
+      Points		      [-45, 0; 0, 75]
+      DstBlock		      "Half-bridge IGBT\nwith Loss Calculation\n(Continuous)"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Fsw=10kHz"
+      SrcPort		      1
+      DstBlock		      "Switch"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Fsw=2.5 kHz"
+      SrcPort		      1
+      DstBlock		      "Switch"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Step"
+      SrcPort		      1
+      Points		      [-25, 0; 0, 65]
+      DstBlock		      "Switch"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Max\ntemp"
+      SrcPort		      1
+      DstBlock		      "Add2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Add2"
+      SrcPort		      1
+      Points		      [5, 0]
+      Branch {
+	DstBlock		"Stop_Sim"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 40]
+	DstBlock		"To Workspace"
+	DstPort			1
+      }
+    }
+    Annotation {
+      Name		      "Loss Calculation & Thermal model\n10-kHz Buck Converter\n12-kW, 300 Vdc --> 125 Vdc"
+      Position		      [266, 43]
+      FontName		      "Arial"
+      FontSize		      14
+      FontWeight	      "bold"
+    }
+    Annotation {
+      Position		      [58, 15]
+    }
+    Annotation {
+      Position		      [514, 117]
+      ForegroundColor	      "blue"
+    }
+    Annotation {
+      Name		      "switch-on extra load"
+      Position		      [578, 175]
+      ForegroundColor	      "red"
+      FontName		      "Arial"
+      FontSize		      12
+    }
+    Annotation {
+      Name		      "change switching frequency"
+      Position		      [613, 35]
+      ForegroundColor	      "red"
+      FontName		      "Arial"
+      FontSize		      12
+    }
+    Annotation {
+      Name		      "Simulation stops, if junctions temperature \nexceeds 150 degrees Celsius"
+      Position		      [530, 550]
+      HorizontalAlignment     "left"
+      ForegroundColor	      "red"
+      FontName		      "Arial"
+    }
+    Annotation {
+      Name		      "Using the Accelerator provides a \nsignificant gain in simulation speed"
+      Position		      [16, 87]
+      HorizontalAlignment     "left"
+      ForegroundColor	      "blue"
+      FontName		      "Arial"
+      FontAngle		      "italic"
+    }
+  }
+}
+MatData {
+  NumRecords		  1
+  DataRecord {
+    Tag			    DataTag0
+    Data		    "  %)30     .    : ,   8    (     @         %    \"     $    !     0         %  0 #     $   \"0    <&]W9"
+    "7)G=6D     <W1E861Y<W1A=&4 :6YI='-T871E<P  ;&]A9&9L;W<     ;&]A9&9L;W=N97< ;'1I=FEE=P      >FUE=&5R        9F9T=&]"
+    "O;       <F5P;W)T        :'ES=&5R97-I<P  ;&EN97!A<F%M    5',             #@   #     &    \"     8         !0    @ "
+    "              $         \"0         .    ,     8    (    !@         %    \"                0         )          X "
+    "   P    !@    @    &          4    (               !          D         #@   #     &    \"     8         !0    @  "
+    "             $         \"0         .    ,     8    (    !@         %    \"                0         )          X  "
+    "  P    !@    @    &          4    (               !          D         #@   #     &    \"     8         !0    @   "
+    "            $         \"0         .    ,     8    (    !@         %    \"                0         )          X   "
+    " P    !@    @    &          4    (               !          D         #@   #     &    \"     8         !0    @    "
+    "           $         \"0         .    ,     8    (    !@         %    \"                0         )          X    "
+    "P    !@    @    &          4    (               !          D         "
+  }
+}
